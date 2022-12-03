@@ -19,3 +19,21 @@ extension ArraySlice where Element == Int {
     self.sorted(by: { $0 > $1 })
   }
 }
+
+extension Array {
+  func splitGrouped(n: Int) -> [[Element]] {
+    var groups: [[Element]] = []
+    var group: [Element] = []
+    var l = n
+    for line in self {
+      group.append(line)
+      l -= 1
+      if l == 0 {
+        groups.append(group)
+        group = []
+        l = n
+      }
+    }
+    return groups
+  }
+}
