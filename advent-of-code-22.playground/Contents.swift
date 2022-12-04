@@ -20,3 +20,10 @@ print("*** Day 3")
 let rucksack = RucksackManager(fileLoader: TxtFileLoader())
 print(try rucksack.getPrioScoreHalf(input: "day-3"))
 print(try rucksack.getPrioScoreTriplet(input: "day-3"))
+
+// MARK: - Day 4
+
+print("*** Day 4")
+let campClean = CampCleanup(fileLoader: TxtFileLoader())
+print(try campClean.getOverlapCount(input: "day-4", part: .one))
+print(try campClean.getOverlapCount(input: "day-4", part: .two))
