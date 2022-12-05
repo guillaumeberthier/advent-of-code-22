@@ -27,3 +27,10 @@ print("*** Day 4")
 let campClean = CampCleanup(fileLoader: TxtFileLoader())
 print(try campClean.getOverlapCount(input: "day-4", part: .one))
 print(try campClean.getOverlapCount(input: "day-4", part: .two))
+
+// MARK: - Day 5
+
+print("*** Day 5")
+let supplyStacks = SupplyStack(fileLoader: TxtFileLoader())
+print(try supplyStacks.getTopStack9000(input: "day-5"))
+print(try supplyStacks.getTopStack9001(input: "day-5"))
